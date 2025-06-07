@@ -1,0 +1,32 @@
+
+.banner{
+    text-align: center;
+    
+    width: 100%;
+    padding: 20px;
+    font-family: monospace;
+    background-image: url("assets/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 2px;
+   color: white;
+   font-weight: bolder;
+   transition: 1s ease;
+}
+.banner:hover{
+    background: scroll;
+    color: black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.148);
+}
+ h1{
+    font-size: 3rem;   
+}
+h3{
+    font-size: 2rem;
+}
+span{
+    color: RED;
+}
+.btext{
+    color: rgb(235, 0, 0);
+}

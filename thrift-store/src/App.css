@@ -1,0 +1,24 @@
+.transition-container {
+  position: relative;
+ 
+}
+
+.fade-slide {
+  position: absolute;
+  width: 100%;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+
+.fade-slide.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.fade-slide.hidden {
+  opacity: 0;
+  transform: translateY(10px);
+}
