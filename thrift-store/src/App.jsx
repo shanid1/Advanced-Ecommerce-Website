@@ -89,7 +89,7 @@ function App() {
      {showAdmin && (<Admin />)}
 
       {showMain && <div className="mainAd">
-      <div style={{display:"flex", justifyContent:"center"}}>
+      <div className="mobileAd" style={{display:"flex", justifyContent:"center"}}>
      <Section imgurl={ad1}width="60%"title="Hot Pics"goSection={() => handleSection("Hot")} />
      <Section imgurl={ad2} width="30%"title="RetroJERSEY"goSection={() => handleSection("Jersey")} />
       </div>

@@ -502,3 +502,106 @@
   padding: 20px;
   margin: 20px;
 }
+
+
+
+@media (max-width: 768px) {
+  .loginform {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .searchinput {
+    width: 70%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .searchbox{
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+  }
+  .searchbtn,
+  .usernameBtn {
+    width: 30%;
+    
+    min-width: unset;
+    font-size: 1rem;
+  }
+
+  .productGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+    margin: 10px 0;
+  }
+
+  .section {
+    max-width: 90%;
+    font-size: .8em;
+    margin: 20px;
+    min-width: none;
+    
+    
+  }
+  .banner h1{
+    font-size: 1.5rem;
+  }
+  .banner h3{
+    font-size: 1rem;
+    background-color: #00000025;
+  }
+  .mobileAd{
+    margin: 10px;
+    padding: 10px;
+    
+   
+  }
+  .section:hover {
+    font-size: .9rem;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .productview img {
+    width: 40%;
+    height: auto;
+    transition: 0.3s ease;
+  }
+  .productview img:hover
+  {
+    width: 52%;
+    height: auto;
+
+  }
+.productview img:focus
+  {
+    width: 52%;
+    height: auto;
+
+  }
+  .productbtns {
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 0;
+  }
+
+  .productbtns button {
+    width: 100%;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .smallAd {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
