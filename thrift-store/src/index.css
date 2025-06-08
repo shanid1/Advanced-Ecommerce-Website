@@ -611,3 +611,6 @@
     font-size: .5rem;
   }
 }
+body, html {
+  overflow-x: hidden;
+}
