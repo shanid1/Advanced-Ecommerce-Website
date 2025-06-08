@@ -543,7 +543,7 @@
 
   .section {
     max-width: 90%;
-    font-size: .8em;
+    font-size: .7em;
     margin: 20px;
     min-width: none;
     
@@ -563,7 +563,7 @@
    
   }
   .section:hover {
-    font-size: .9rem;
+    font-size: .85em;
     transform: none;
     box-shadow: none;
   }
@@ -603,5 +603,11 @@
     flex-direction: column;
     gap: 10px;
     text-align: center;
+  }
+  .mainDiv h1{
+    font-size: 1rem;
+  }
+  .mainDiv h3{
+    font-size: .5rem;
   }
 }
