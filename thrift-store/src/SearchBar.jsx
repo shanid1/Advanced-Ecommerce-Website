@@ -41,7 +41,7 @@ onAdmin();
       <button className="homebtn" alt="home" onClick={homeClick}style={{ backgroundImage: `url('/assets/homelogo.png')` }}></button>
       <input
         className="searchinput"
-        placeholder='Search for a product...(eg:- "argentina" "pants" "shoes"")'
+        placeholder='Search for a product...'
         type="text"
         value={query}
         onChange={changeSearch}
