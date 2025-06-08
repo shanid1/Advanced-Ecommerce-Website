@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import bannerImage from './assets/homelogo.png';
 
 const SearchBar = ({ onSearch, onLogin, name ,onAdmin,homeClick}) => {
   const [query, setQuery] = useState("");
@@ -35,7 +36,8 @@ onAdmin();
   }
   return (
     <div className="searchbox">
-      <button className="homebtn" alt="home" onClick={homeClick}></button>
+      
+      <button className="homebtn" alt="home" onClick={homeClick}style={{ backgroundImage: `url(${bannerImage})` }}></button>
       <input
         className="searchinput"
         placeholder='Search for a product...(eg:- "argentina" "pants" "shoes"")'

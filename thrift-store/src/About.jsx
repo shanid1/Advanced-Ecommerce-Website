@@ -1,6 +1,8 @@
 import React from "react";
 import "./Banner.css";
 import ad2 from "./assets/ad2.png";
+import bannerImage from './assets/banner.png';
+
 const About= (props)=>{
     return(<>
        <div className="about">
@@ -16,7 +18,8 @@ const About= (props)=>{
         </div>
         
        </div>
-       <div className="movingAd">
+    
+        <div className="movingAd" style={{ backgroundImage: `url(${bannerImage})` }}>
       <marquee> 
         <h2>||HIGH QUALITY PRODUCT AT LOWEST RATE||   &nbsp;&nbsp;||HIGH QUALITY PRODUCT AT LOWEST RATE||   &nbsp;&nbsp;||HIGH QUALITY PRODUCT AT LOWEST RATE||   &nbsp;&nbsp;||HIGH QUALITY PRODUCT AT LOWEST RATE||   &nbsp;&nbsp;||HIGH QUALITY PRODUCT AT LOWEST RATE||   &nbsp;&nbsp;</h2>
         </marquee>

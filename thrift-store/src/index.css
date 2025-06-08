@@ -376,7 +376,7 @@
 }
 
 .homebtn{
-  background-image: url("assets/homelogo.png");
+
   background-size: cover;
   border: none;
   height: 30px;
@@ -475,7 +475,7 @@
   border-radius: 10px;
 }
 .movingAd{
-    background-image: url("assets/banner.png");
+   
     background-size: cover;
     object-fit: cover;
     color: white;

@@ -7,6 +7,7 @@ const All = ({ mainTitle, name, showView }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
+    document.title = "Urban Thrive"
     const fetchProducts = async () => {
       let allItems = [];
       const genderPaths = ["male", "female"];
