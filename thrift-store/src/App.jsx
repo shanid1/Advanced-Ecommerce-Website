@@ -10,9 +10,9 @@ import Footer from "./Footer";
 import ProductView from "./ProductView";
 import About from "./About";
 
-import ad2 from './assets/ad2.png';
-import ad1 from './assets/ad1.png';
-import ad3 from './assets/ad3.webp';
+import ad2 from '/assets/ad2.png';
+import ad1 from '/assets/ad1.png';
+import ad3 from '/assets/ad3.webp';
 import "./App.css";
 import { query } from "firebase/firestore";
 

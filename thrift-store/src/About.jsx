@@ -1,7 +1,7 @@
 import React from "react";
 import "./Banner.css";
-import ad2 from "./assets/ad2.png";
-import bannerImage from './assets/banner.png';
+import ad2 from "/assets/ad2.png";
+import bannerImage from '/assets/banner.png';
 
 const About= (props)=>{
     return(<>
