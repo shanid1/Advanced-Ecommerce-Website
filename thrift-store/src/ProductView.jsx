@@ -45,7 +45,7 @@ const ProductView = ({ product }) => {
       });
 
       // Open WhatsApp chat
-      window.open("https://wa.me/9995875807", "_blank");
+      window.open("https://wa.me/919995875807", "_blank");
     } catch (err) {
       console.error("Failed to update sold count:", err);
       alert("Something went wrong while processing the purchase.");
