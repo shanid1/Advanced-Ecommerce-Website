@@ -39,7 +39,7 @@ const All = ({ mainTitle, name, showView }) => {
             if (
               data.name?.toLowerCase().includes(mainTitle.toLowerCase()) ||
               data.description?.toLowerCase().includes(mainTitle.toLowerCase()||
-              data.genders(0)?.toLowerCase().includes(mainTitle.toLowerCase()))
+              data.genders?.some(g => g.toLowerCase().includes(mainTitle.toLowerCase())))
             ) {
               allItems.push({ id: docSnap.id, gender, ...data });
             }
@@ -65,11 +65,12 @@ const All = ({ mainTitle, name, showView }) => {
 
   return (
     <div className="mainDiv">
-      <h1>{mainTitle === "Top selling" ? mainTitle : `${mainTitle} Products`}</h1>
+      <h1>{mainTitle === "Top Selling" ? mainTitle : `${mainTitle} Products`}</h1>
       <hr />
       {products.length === 0 ? (
-        <h3>Loading....</h3>
+    <h3>{mainTitle === "Top Selling" ? "Loading..." : "No matching products found."}</h3>
       ) : (
+
         <div className="productGrid">
           {products.map((product) => (
             <ProductCard
