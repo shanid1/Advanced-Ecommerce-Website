@@ -45,7 +45,7 @@ function App() {
   };
   const handleUserName = async (name) => {
     if(name==="MAIN"){
-    setUsername("ADMIN");
+    setUsername("4DMIN");
     }
     else{
     setUsername(name);
@@ -87,14 +87,14 @@ function App() {
 
       {showMain && <div className="mainAd">
       <div className="mobileAd" style={{display:"flex", justifyContent:"center"}}>
-     <Section imgurl={"/assets/ad1.png"} width="60%" title="Hot Pics" goSection={() => handleSection("Hot")} />
-<Section imgurl={"/assets/ad2.png"} width="30%" title="RetroJERSEY" goSection={() => handleSection("Jersey")} />
+     <Section imgurl={"/assets/ad1.png"} width="60%" title="Baggy Pants" goSection={() => handleSection("Baggy")} />
+<Section imgurl={"/assets/ad2.png"} width="30%" title="Wide" goSection={() => handleSection("Wide")} />
 
 
       </div>
       <Banner/>
-      <All mainTitle={"Top Selling"} name={username} showView={handleView}/>
-      <Section imgurl={"/assets/ad3.webp"} width="95%" title="Trending Pants" goSection={() => handleSection("Pants")} />
+      <All mainTitle={"Top Selling"} name={username=="4DMIN"} showView={handleView}/>
+      <Section imgurl={"/assets/ad3.png"} width="98%" title="Trending Pants" goSection={() => handleSection("Trending")} />
         <About/>
         </div>}
         <div>

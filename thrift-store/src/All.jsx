@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { collection, getDocs, query, orderBy, limit, doc, deleteDoc } from "firebase/firestore";
 import { db } from "./firebase";
 import ProductCard from "./ProductCard";
-
+import "./Cssforall.css";
 const All = ({ mainTitle, name, showView }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    document.title = "Urban Thrive"
+    document.title = "Thrift"
     const fetchProducts = async () => {
       let allItems = [];
       const genderPaths = ["male", "female"];

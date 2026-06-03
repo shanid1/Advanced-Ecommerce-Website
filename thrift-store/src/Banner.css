@@ -7,18 +7,21 @@
     font-family: monospace;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 2px;
+    background-position: center;
    color: white;
    font-weight: bolder;
    transition: 1s ease;
+
+   
 }
+
 .banner:hover{
     background: scroll;
     
     color: rgb(255, 255, 255);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.148);
 }
- h1{
+h1{
     font-size: 3rem;   
 }
 h3{
@@ -29,8 +32,161 @@ span{
 }
 .btext{
     color: rgb(235, 0, 0);
-}@media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
+
     .banner{
-    width:90%;
+        width: 100%;
+        min-height: 70px;
+
+        padding: 15px;
+
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0 auto;
+    }
+
+    .banner h1{
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    .banner h3{
+        font-size: 0.9rem;
+        margin-top: 5px;
     }
 }
+
+
+/*about by gpt*/
+.about{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:40px 8%;
+    gap:40px;
+}
+
+.about h2{
+    font-size:1.5rem;
+    line-height:1.4;
+}
+
+.about h4{
+    font-size:1rem;
+    opacity:0.8;
+}
+
+.about p{
+    font-size:0.95rem;
+    line-height:1.6;
+}
+
+.about img{
+    width:300px;
+    height:auto;
+    object-fit:contain;
+}
+
+.details{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.details > h2{
+    font-size:2rem;
+    margin-bottom:30px;
+}
+
+.smallAd{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.smallAd div{
+    max-width:300px;
+}
+
+.smallAd img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+}
+
+.smallAd h2{
+    font-size:1.2rem;
+    margin-top:10px;
+}
+
+.smallAd p{
+    font-size:0.9rem;
+    line-height:1.5;
+}
+
+.movingAd{
+    background-size:cover;
+    background-position:center;
+    width: 100%;
+    padding:10px 0;
+}
+
+.movingAd h2{
+    font-size:1.2rem;
+    margin:0;
+}
+
+@media (max-width:768px){
+
+    .about{
+        flex-direction:column;
+        text-align:center;
+        padding:25px 15px;
+    }
+
+    .about h2{
+        font-size:1.35rem;
+    }
+
+    .about h4{
+        font-size:0.85rem;
+    }
+
+    .about p{
+        font-size:0.8rem;
+    }
+
+    .about img{
+        width:180px;
+    }
+
+    .details > h2{
+        font-size:1.4rem;
+    }
+
+    .smallAd img{
+        width:45px;
+        height:45px;
+    }
+
+    .smallAd h2{
+        font-size:1rem;
+    }
+
+    .smallAd p{
+        font-size:0.8rem;
+    }
+
+    .movingAd h2{
+        font-size:0.9rem;
+    }
+}
+/*about end*/

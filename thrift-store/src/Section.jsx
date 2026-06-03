@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Section.css";
 const Section = (props) => {
   return (
     <div
@@ -7,8 +7,10 @@ const Section = (props) => {
       onClick={props.goSection}
       style={{
         minWidth: props.width,
-        backgroundImage: `url(${props.imgurl})`,  
-        
+        backgroundImage: `url(${props.imgurl})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center center",
+        backgroundRepeat: "no-repeat"
       }}
     >
       <div>

@@ -110,9 +110,14 @@ const Admin = () => {
     <br/>
         <label>Available Sizes</label>
         <div>
-          {["XXL", "XL", "L", "M", "S"].map((size) => (
+          {["28", "30", "32", "34", "36", "38", "40", "42", "44", "46"].map((size) => (
             <span key={size}>
-              <input type="checkbox" className="check" checked={sizes.includes(size)} onChange={() => toggleSize(size)} />
+              <input
+                type="checkbox"
+                className="check"
+                checked={sizes.includes(size)}
+                onChange={() => toggleSize(size)}
+              />
               <label>{size}</label>
             </span>
           ))}

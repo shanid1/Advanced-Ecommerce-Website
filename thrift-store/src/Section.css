@@ -1,0 +1,13 @@
+
+
+@media (max-width:768px){
+
+    .section{
+        height:220px;
+        border-radius:10px;
+    }
+
+    .section h2{
+        font-size:0.9rem;
+    }
+}

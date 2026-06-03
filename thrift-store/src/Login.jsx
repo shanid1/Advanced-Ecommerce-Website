@@ -7,19 +7,25 @@ const Login = ({backBtn,userLoggedIn}) => {
   const [name, setName] = useState("");
   const [pass, setPass] = useState("");
 
- const handleGoogleLogin = () => {
-    signInWithPopup(auth, provider)
-      .then((result) => {
-        const user = result.user;
-        console.log("Google Login Success:", user);
+const handleGoogleLogin = () => {
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      const user = result.user;
+      console.log("Google Login Success:", user);
+
+      if (user.email === "shanidktk18@gmail.com") {
+        userLoggedIn("MAIN");
+      } else {
         userLoggedIn(user.displayName);
-        backBtn();
-      })
-      .catch((error) => {
-        console.error("Google Login Error:", error);
-        alert("Google sign-in failed");
-      });
-  };
+      }
+
+      backBtn();
+    })
+    .catch((error) => {
+      console.error("Google Login Error:", error);
+      alert("Google sign-in failed");
+    });
+};
 
   function login() {
     if(name.trim()=="" || name.trim().length < 5){

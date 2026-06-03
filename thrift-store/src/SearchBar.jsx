@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import './Cssforall.css'
 
 
 const SearchBar = ({ onSearch, onLogin, name ,onAdmin,homeClick}) => {
@@ -13,7 +13,7 @@ const SearchBar = ({ onSearch, onLogin, name ,onAdmin,homeClick}) => {
     } else {
       setLoggedin(false);
     }
-    if(name=="ADMIN"){
+    if(name=="4DMIN"){
     setAdmin(true);
     setLoggedin(true);
     }
@@ -40,6 +40,7 @@ onAdmin();
       
       <button className="homebtn" alt="home" onClick={homeClick}style={{ backgroundImage: `url('/assets/homelogo.png')` }}></button>
       <input
+        
         className="searchinput"
         placeholder='Search for a product...'
         type="text"

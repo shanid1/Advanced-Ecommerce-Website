@@ -1,0 +1,43 @@
+
+
+@media (max-width:768px){
+
+    .searchinput{
+        height: 70%;
+    }
+}
+
+/*ALL*/
+
+
+.mainDiv{
+    padding: 0 1%;
+}
+
+.productGrid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,220px));
+    justify-content:center;
+    gap:30px;
+    
+}
+
+@media (max-width:768px){
+
+    .mainDiv{
+        padding: 0 20px;
+    }
+
+    .productGrid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-content: center;
+    }
+}
+
+@media (min-width:500px) and (max-width:768px){
+
+    .productGrid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

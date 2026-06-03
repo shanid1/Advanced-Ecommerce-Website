@@ -8,19 +8,21 @@ const About= (props)=>{
        <div className="about">
         <div>
             <h4>Collection</h4>
-            <h2>Welcome to Shanid's Store -<br/> where your fashion shines.<br/> Discover our premium jerseys<br/> and wear your passion!</h2>
+            <h2>Welcome to Shanid's Store -
+<br/>where timeless style meets everyday comfort.<br/>Discover our carefully selected thrifted jeans<br/>and find the perfect fit for your wardrobe.</h2>
             <hr></hr>
-            <h4>Our Clothing</h4>
-            <p>Each jersey is meticulously crafted with precision embroidery,<br/> offering a unique touch that reflects your team’s spirit and individuality.<br/> Perfect for adding a personal flair to your performance.</p>
+            <h4>Our Denim</h4>
+            <p>Each pair is handpicked for its quality, durability,<br/> and unique character, offering styles that stand out from the crowd.
+.<br/> Perfect for expressing your individuality while staying comfortable every day.</p>
         </div>
         <div>
-            <img src={ad2}></img>
+            <img src={ad2} style={{ backgroundSize: "cover" , width: "100%", height: "100%" , borderRadius:'0px'}}></img>
         </div>
         
        </div>
     
-        <div className="movingAd" style={{ backgroundImage: `url(${bannerImage})` }}>
-      <marquee> 
+        <div className="movingAd" style={{ backgroundImage: `url(${bannerImage})`}}>
+      <marquee behavior="alternate" direction="left" scrollamount="5"> 
         <h2>||HIGH QUALITY PRODUCT AT LOWEST RATE||   &nbsp;&nbsp;||HIGH QUALITY PRODUCT AT LOWEST RATE||   &nbsp;&nbsp;||HIGH QUALITY PRODUCT AT LOWEST RATE||   &nbsp;&nbsp;||HIGH QUALITY PRODUCT AT LOWEST RATE||   &nbsp;&nbsp;||HIGH QUALITY PRODUCT AT LOWEST RATE||   &nbsp;&nbsp;</h2>
         </marquee>
        </div> 
@@ -29,18 +31,18 @@ const About= (props)=>{
        <div className="smallAd">
        <div>       
         
-        <img src="https://thayyilsports.com/wp-content/uploads/2023/09/Icon.jpeg"></img>
+        <img src="/assets/quality.png"></img>
         <h2>Highest quality</h2>
         <p>Our exclusive experiences blend fitness<br/> and sports, creating the perfect <br/>harmony between body and mind.</p>
        </div>
        <div>
-        <img src="https://thayyilsports.com/wp-content/uploads/2023/09/Icon2.jpeg"></img>
+        <img src="/assets/discount.png"></img>
         <h2>Discounts on the way</h2>
         <p>Get ready for unbeatable deals –<br/> the best discounts on your favorite sports gear<br/> are coming soon!</p>
 
         </div>
        <div>
-        <img src="https://thayyilsports.com/wp-content/uploads/2023/09/Icon3.jpeg"></img>
+        <img src="/assets/surprise.png"></img>
         <h2>Exciting surprises</h2>
         <p>Exciting surprises await –<br/> incredible discounts are coming soon,<br/> plus exclusive gift items with every purchase!</p>
         </div>
