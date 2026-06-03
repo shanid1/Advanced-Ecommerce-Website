@@ -65,7 +65,7 @@ const All = ({ mainTitle, name, showView }) => {
 
   return (
     <div className="mainDiv">
-      <h1>{mainTitle === "Top Selling" ? mainTitle : `${mainTitle} Products`}</h1>
+      <h1>{mainTitle === "Top Selling" ? mainTitle : `${mainTitle}`}</h1>
       <hr />
       {products.length === 0 ? (
     <h3>{mainTitle === "Top Selling" ? "Loading..." : "No matching products found."}</h3>

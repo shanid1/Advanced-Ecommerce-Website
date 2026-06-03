@@ -6,7 +6,7 @@ const Banner= (props)=>{
     return(<><div className="banner" style={{ backgroundImage: `url('/assets/banner.png')`}}>
 
         <h1>Shipping all <span className="btext">over India</span></h1>
-        <h3>just at <span>₹50</span></h3>
+        <h3>just at <span>₹65</span></h3>
        </div>
     </>)
 }

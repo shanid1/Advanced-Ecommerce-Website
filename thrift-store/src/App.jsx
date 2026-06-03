@@ -72,10 +72,10 @@ function App() {
 
   return (
     <>
+    
     <div className="transition-container">
-      <div
-        
-      >
+      <div style={{backgroundColor:"black",width:"100%",height:"40px",display:"flex",alignItems:"center",justifyContent:"center"}}><h4 style={{color:"white", fontFamily:"monospace"}}>LEAD WITHOUT LIMITS</h4></div>
+      <div>
         <SearchBar onSearch={handleSearch} homeClick={handleHome} onAdmin ={handleAdmin} onLogin={handleLogin} name={username} />
       </div>
       <div
@@ -84,17 +84,20 @@ function App() {
         <Login backBtn={handleLogin} userLoggedIn={handleUserName} onAdmin={handleAdmin}/>
       </div>
      {showAdmin && (<Admin />)}
-
       {showMain && <div className="mainAd">
-      <div className="mobileAd" style={{display:"flex", justifyContent:"center"}}>
-     <Section imgurl={"/assets/ad1.png"} width="60%" title="Baggy Pants" goSection={() => handleSection("Baggy")} />
-<Section imgurl={"/assets/ad2.png"} width="30%" title="Wide" goSection={() => handleSection("Wide")} />
+      <div className="mobileAd" style={{display:"flex", width:"100%", justifyContent:"stretch"}}>
+     <Section imgurl={"/assets/ad1.png"} width="100%" height="1000px" title="Wide Pants" goSection={() => handleSection("Wide")} />
+     {/*<Section imgurl={"/assets/ad2.png"} width="30%" title="Wide" goSection={() => handleSection("Wide")} />*/}
 
 
       </div>
-      <Banner/>
+      
       <All mainTitle={"Top Selling"} name={username=="4DMIN"} showView={handleView}/>
-      <Section imgurl={"/assets/ad3.png"} width="98%" title="Trending Pants" goSection={() => handleSection("Trending")} />
+      <Banner/>
+      <All mainTitle={"Baggy"} name={username=="4DMIN"} showView={handleView}/>
+      <div className="mobileAd" style={{display:"flex",justifyContent:"center",}}>
+      <Section  imgurl={"/assets/ad3.png"} width="100%"  title="Trending Pants" goSection={() => handleSection("Trending")} />
+      </div> 
         <About/>
         </div>}
         <div>

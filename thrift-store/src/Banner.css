@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-   color: white;
+   color: rgb(255, 255, 255);
    font-weight: bolder;
    transition: 1s ease;
 
@@ -18,7 +18,7 @@
 .banner:hover{
     background: scroll;
     
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.148);
 }
 h1{
@@ -28,10 +28,10 @@ h3{
     font-size: 2rem;
 }
 span{
-    color: RED;
+    color: rgb(139, 139, 139);
 }
 .btext{
-    color: rgb(235, 0, 0);
+    color: rgb(137, 137, 137);
 }
 
 @media (max-width: 768px) {

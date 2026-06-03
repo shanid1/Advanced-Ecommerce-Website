@@ -4,10 +4,12 @@
 
     .section{
         height:220px;
-        border-radius:10px;
+        border-radius:0px;
+        max-height: 220px;
     }
 
     .section h2{
         font-size:0.9rem;
     }
 }
+

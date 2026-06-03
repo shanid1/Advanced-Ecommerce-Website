@@ -1,19 +1,30 @@
-.searchbox{
-  
+body,
+html,
+#root{
+    margin:0;
+    padding:0;
+}
 
+.searchbox{
+  display: flex;
   align-items: center;
-  text-align: center;
-    background-color: rgba(241, 238, 238, 0.208);
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  width: 100%;
+  padding: 15px 20px;
+
+  background-color: rgba(241, 238, 238, 0.208);
   border: 2px solid rgba(0, 0, 0, 0.042);
-    border-radius: 10px;
-  padding: 20px;
+  border-radius: 10px;
 }
 
 .searchinput{
-  height: 50px;
+  height: 70px;
   line-height: 28px;
   padding: 0 1rem;
-  width: 65%;
+  
   padding-left: 2.5rem;
   border: 2px solid transparent;
   border-radius: 8px;
@@ -21,9 +32,17 @@
   background-color: white;
   color: #0d0c22;
   transition: .3s ease;
-  margin: 10px;
+
   font-family: monospace;
   border: 2px solid #1A1A1A;
+  width: 280px;
+  max-width: 90vw;
+
+  height: 45px;
+  padding: 0 1rem;
+
+  margin: 0;
+
 }
 
 .searchinput::placeholder {
@@ -37,33 +56,7 @@
   transform: translateY(-2px);
 
 }
-.searchbtn {
-  appearance: none;
-  background-color: white;
-  border: 2px solid #1A1A1A;
-  border-radius: 15px;
-  box-sizing: border-box;
-  color: #3B3B3B;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  font-weight: 600;
-  line-height: normal;
-  margin: 0;
-  min-height: 20px;
-  margin: 12px;
-  min-width: 150px;
-  outline: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  will-change: transform;
-}
+.searchbtn { appearance: none; background-color: white; border: 2px solid #1A1A1A; border-radius: 15px; box-sizing: border-box; color: #000000; cursor: pointer; display: inline-block; font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; font-size: 16px; font-weight: 600; line-height: normal; margin: 0; min-height: 20px; margin: 12px; min-width: 90px; outline: none; padding: 5px 10px; text-align: center; text-decoration: none; transition: all 300ms cubic-bezier(.23, 1, 0.32, 1); user-select: none; -webkit-user-select: none; touch-action: manipulation; will-change: transform; }
 
 .searchbtn:disabled {
   pointer-events: none;
@@ -80,7 +73,30 @@
   box-shadow: none;
   transform: translateY(0);
 }
+.realsearchbtn{
+  background-image: url('/assets/search.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  border: none;
+  transition: 0.4s ease;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 12px;
+  justify-content: center;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none; -webkit-user-select: none; touch-action: manipulation; will-change: transform
+}
+.realsearchbtn:disabled {
+  pointer-events: none;
+}
 
+
+.realsearchbtn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
 .loginform{
     width: 50%;
     text-align: center;
@@ -136,6 +152,9 @@
 }
 
 .usernameBtn{
+    margin: 0;
+  min-width: 120px;
+  font-size: 18px;
   appearance: none;
   background-color: white;
   border: none;
@@ -256,7 +275,7 @@
 }
 
 .card{
-    border: 2px solid black;
+    border: 1px solid black;
     width: 230px;
     height: 430px;
 
@@ -279,7 +298,7 @@
     height: 300px;
     object-fit: cover;
 
-    border-radius: 8px;
+    
     transition: 0.3s ease;
 
     display: block;
@@ -355,11 +374,11 @@
     }
 }
 .section{
-    margin: 40px;
-    border: 2px solid rgba(0, 0, 0, 0.158);
-    border-radius: 10px;
+ 
+
+    
     min-width: 40%;
-    max-width: 70%;
+    max-width: 100%;
     min-height: fit-content;
     height: 400px;
     display: flex;
@@ -367,7 +386,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 8px;
+
     font-size: 2rem;
     font-family: monospace;
     transition: 0.3s ease;
@@ -376,7 +395,23 @@
     background-size:cover;
     
 }
+.section{
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
 
+.mobileAd{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+.section{
+    width:100% !important;
+    max-width:100% !important;
+    margin:0 !important;
+}
 .section h2{
     
     color: white;
@@ -390,14 +425,13 @@
     max-width: 75%;
     font-size: 2.5rem;
     cursor: pointer;
-   transform: translateY(-5%);
+   transform: translateY(-2%);
  box-shadow: rgba(48, 48, 48, 0.468) 0px 13px 47px -5px, rgba(158, 151, 92, 0.458) 0px 8px 16px -8px;
 }
 
 .mainDiv{
     text-align: center;
-    border: 2px solid rgba(0, 0, 0, 0.149);
-    border-radius: 10px;
+  
     
 
 }
@@ -435,13 +469,26 @@
 
 .homebtn{
 
+   width: 42px;
+  height: 42px;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border: none;
+  cursor: pointer;
+
+  margin: 0;
+  padding: 0;
   background-size: cover;
   border: none;
-  height: 30px;
-  width: 30px;
-  margin: 10px;
-  padding: 10px;
+  height: 80px;
+  width: 80px;
+  
+ 
   cursor: pointer;
+ 
   background-color: transparent;
   transition: 0.3s ease;
 }
@@ -452,7 +499,26 @@
 
 
 
+@media (max-width:768px){
 
+  .searchbox{
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .searchinput{
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .searchbtn,
+  .usernameBtn{
+    min-width: 100px;
+    font-size: 14px;
+  }
+
+ 
+}
 
 
 
@@ -600,9 +666,9 @@
   }
 
   .section {
-    max-width: 90%;
+    max-width: 100%;
     font-size: .7em;
-    margin: 20px;
+    
     min-width: none;
     
     
@@ -614,12 +680,7 @@
     font-size: 1rem;
     background-color: #00000025;
   }
-  .mobileAd{
-    margin: 10px;
-    padding: 10px;
-    
-   
-  }
+
   .section:hover {
     font-size: .85em;
     transform: none;
@@ -671,4 +732,122 @@
 }
 body, html {
   overflow-x: hidden;
+}
+
+
+.searchbox{
+  position:relative;
+
+  display:flex;
+  
+  align-items:center;
+  justify-content:space-between;
+
+  width:100%;
+  padding:15px 25px;
+
+  background-color:rgba(241,238,238,0.208);
+  border:2px solid rgba(0,0,0,0.042);
+  border-radius:10px;
+
+  box-sizing:border-box;
+}
+
+.searchbox > div:first-child{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.searchinput{
+  width:180px;
+  height:30px;
+  margin:0;
+  opacity: 80%;
+}
+
+.realsearchbtn{
+  width: 25px;
+  height: 25px;
+  opacity: 80%;
+}
+
+.homebtn{
+  position:absolute;
+
+  left:50%;
+  top:50%;
+
+  transform:translate(-50%,-50%);
+
+  width:90px;
+  height:90px;
+
+  background-size:contain;
+  background-position:center;
+  background-repeat:no-repeat;
+
+  border:none;
+  background-color:transparent;
+
+  cursor:pointer;
+}
+
+.searchbtn,
+.usernameBtn{
+  min-width:120px;
+  height: 40px;
+  margin:0;
+  opacity: 80%;
+}
+
+@media(max-width:768px){
+
+  .searchbox{
+    display:flex;
+    flex-direction:row;
+
+    align-items:center;
+    gap:8px;
+    padding:10px;
+  }
+
+  .homebtn{
+    position:static;
+    transform:none;
+    width:80px;
+    height:80px;
+    padding: 0px;
+  }
+
+  .searchbox > div:first-child{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    width:auto;
+    gap:4px;
+  }
+
+  .searchinput{
+    width:60px;
+    height:20px;
+    margin:0;
+  }
+
+  .realsearchbtn{
+    width:20px;
+    height:20px;
+    margin:0;
+    flex-shrink:0;
+  }
+
+  .searchbtn,
+  .usernameBtn{
+    width:80px;
+    min-width:80px;
+    height:35px;
+    margin:0;
+    font-size:12px;
+  }
 }

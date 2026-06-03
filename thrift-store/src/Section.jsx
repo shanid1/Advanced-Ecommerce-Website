@@ -8,9 +8,11 @@ const Section = (props) => {
       style={{
         minWidth: props.width,
         backgroundImage: `url(${props.imgurl})`,
+
         backgroundSize: "cover",
         backgroundPosition: "center center",
-        backgroundRepeat: "no-repeat"
+        backgroundRepeat: "no-repeat",
+        height: props.height
       }}
     >
       <div>

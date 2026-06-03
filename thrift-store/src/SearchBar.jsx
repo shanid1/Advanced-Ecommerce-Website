@@ -37,19 +37,22 @@ onAdmin();
   }
   return (
     <div className="searchbox">
-      
-      <button className="homebtn" alt="home" onClick={homeClick}style={{ backgroundImage: `url('/assets/homelogo.png')` }}></button>
+       
+       <div>
       <input
         
         className="searchinput"
-        placeholder='Search for a product...'
+        placeholder='Search for any pant...'
         type="text"
         value={query}
         onChange={changeSearch}
       />
-      <button className="searchbtn" onClick={handleSearch}>
-        Search
-      </button>
+      <button className="realsearchbtn" onClick={handleSearch} />
+     
+      </div>
+      <button className="homebtn" alt="home" onClick={homeClick}style={{ backgroundImage: `url('/assets/homelogo.png')` }}></button>
+      
+     
 
       {!loggedIn && (
         <button className="searchbtn" onClick={login}>
