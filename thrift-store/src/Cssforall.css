@@ -11,7 +11,8 @@
 
 
 .mainDiv{
-    padding: 0 1%;
+    padding: 0 5%;
+    
 }
 
 .productGrid{
@@ -25,7 +26,7 @@
 @media (max-width:768px){
 
     .mainDiv{
-        padding: 0 20px;
+        padding: 0 40px;
     }
 
     .productGrid{

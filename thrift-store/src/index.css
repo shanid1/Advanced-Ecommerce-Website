@@ -308,7 +308,7 @@ html,
 
 .card h1{
     font-size: 0.5rem;
-    margin: 8px 0;
+    margin: 6px 0;
     
     height: 45px;
 
@@ -356,9 +356,9 @@ html,
     }
 
     .card h1{
-        font-size: 0.8rem;
-        height: 32px;
-        margin: 4px 0;
+        font-size: 0.5rem;
+        height: 30px;
+        margin: 2px 0;
     }
 
     .card h2{
