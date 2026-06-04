@@ -46,6 +46,7 @@ onAdmin();
         type="text"
         value={query}
         onChange={changeSearch}
+        onKeyDown={(e) => e.key === "Enter" && handleSearch()}
       />
       <button className="realsearchbtn" onClick={handleSearch} />
      

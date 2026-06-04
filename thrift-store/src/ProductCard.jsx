@@ -12,7 +12,7 @@ const ProductCard = ({ product, name, onDelete, showProduct }) => {
           src={product.images?.front}
           alt={`${product.name} front`}
         />
-        <h1>{product.name}</h1>
+        <h1 style={{ fontSize: '1.3rem' }}>{product.name}</h1>
         <hr />
         <h2>₹{product.price}</h2>
         {name && (

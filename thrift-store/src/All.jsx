@@ -17,7 +17,7 @@ const All = ({ mainTitle, name, showView }) => {
           const topSellingQuery = query(
             collection(db, "products", gender, "items"),
             orderBy("sold", "desc"),
-            limit(5) 
+            limit(8) 
           );
 
           const snapshot = await getDocs(topSellingQuery);

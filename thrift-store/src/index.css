@@ -307,9 +307,9 @@ html,
 }
 
 .card h1{
-    font-size: 1.2rem;
+    font-size: 0.5rem;
     margin: 8px 0;
-
+    
     height: 45px;
 
     overflow: hidden;
@@ -356,7 +356,7 @@ html,
     }
 
     .card h1{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         height: 32px;
         margin: 4px 0;
     }
